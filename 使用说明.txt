@@ -1,0 +1,8 @@
+　　使用说明
+　　步骤1：下载hadoop2.7.1.tar.gz到本地并解压缩，我是放在这个目录C:\Program Files\Hadoop\hadoop-2.7.1
+　　步骤2：下载hadoop-eclipse的插件，https://github.com/winghc/hadoop2x-eclipse-plugin，把hadoop2x- eclipse-plugin-master\release\hadoop-eclipse-plugin-2.6.0.jar
+　　放到eclipse的plugins目录下。（插件写的是hadoop2.6.0的插件，但是hadoop2.7也支持）
+　　步骤3：重启一下eclipse，然后可以看到DFS Locations：
+　　步骤4：.打开Window-->Preferens，可以看到Hadoop Map/Reduc选项，然后点击，然后添加步骤1中hadoop的路 径进来
+　　步骤5：点击Window-->Show View -->MapReduce Tools  点击Map/ReduceLocation，点击Map/ReduceLocation选 项卡，点击右边小象图标，打开Hadoop Location配置窗口： 输入Location Name，任意名称即可.配置 Map/Reduce Master和DFS Mastrer，Host和Port配置成hdfs-site.xml与core-site.xml的设置一致即可。
+　　如果连接成功，会出现hdfs上面的文件夹
